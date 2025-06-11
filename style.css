@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    width: 540px;
+    height: 445px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    margin-top: 20px;
+}
+
+body {
+    background-color: #0A0C1C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #1B1937;
+    width: 100%;
+    max-width: 1100px;
+    height: 446px;
+    border-radius: 8px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    padding: 71px 72px 95px;
+}
+
+span {
+    color: #AB5CDB !important;
+    font-family: "Inter", sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    color: white;
+    font-size: 12px;
+    font-family: "Lexend Deca", sans-serif !important;
+    letter-spacing: 1.5;
+}
+
+li {
+    font-family: "Lexend Deca", sans-serif !important;
+    line-height: 1.5;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 2.0;
+    opacity: 75%;
+}
+
+.companias {
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+}
+
+b {
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    opacity: 100%;
+}
+
+.img-content {
+    width: 100%;
+    z-index: 2;
+    border-radius: 8px !important;
+    position: relative;
+}
+
+.fundo {
+    width: 100%;
+    height: 100%;
+    background-color: #7d03c9;
+    position: absolute;
+    z-index: 1;
+    opacity: 50%;
+}
+
+
+@media screen and (max-width:900px) {
+    .container {
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        margin-top: 0px;
+        padding-bottom: 32px;
+    }
+
+    .companias {
+        display: flex;
+        width: auto;
+        margin-top: 40px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-content {
+        padding: 40px;
+    }
+}
