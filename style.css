@@ -120,6 +120,8 @@ b {
     width: 100%;
     z-index: 2;
     position: relative;
+    border-radius: 8px;
+
 }
 
 
@@ -133,11 +135,15 @@ b {
 }
 
 @media screen and (max-width:900px) {
+    body {
+        padding: 88px 24px;
+        border-radius: 8px;
+    }
+
     .container {
         margin: 0;
         width: 375px;
         height: 956px;
-
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
@@ -146,7 +152,7 @@ b {
     }
 
     .img-content {
-        width:375px;
+        width: 375px;
         height: 240px;
         background-image: url('./images/image-header-mobile.jpg');
         background-repeat: no-repeat;
@@ -154,6 +160,7 @@ b {
         position: relative;
         display: flex;
         align-items: center;
+        border-radius: 8px;
     }
 
     ul {
