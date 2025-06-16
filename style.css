@@ -12,6 +12,7 @@ img {
     width: 540px;
     height: 445px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 h1 {
@@ -111,7 +112,6 @@ b {
     opacity: 100%;
 }
 
-
 .img-content {
     height: 100%;
     background-image: url('./images/image-header-desktop.jpg');
@@ -120,8 +120,8 @@ b {
     width: 100%;
     z-index: 2;
     position: relative;
-    border-radius: 8px;
-
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 
@@ -132,12 +132,14 @@ b {
     position: absolute;
     z-index: 1;
     opacity: 50%;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+
 }
 
 @media screen and (max-width:900px) {
     body {
-        padding: 88px 24px !important;
-        border-radius: 8px;
+        padding: 88px 24px;
     }
 
     .container {
@@ -149,6 +151,13 @@ b {
         text-align: center;
         height: auto;
         align-items: center;
+        border-radius: 8px;
+    }
+
+    .fundo {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 0px;
     }
 
     .img-content {
@@ -160,7 +169,8 @@ b {
         position: relative;
         display: flex;
         align-items: center;
-        border-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
     }
 
     ul {
