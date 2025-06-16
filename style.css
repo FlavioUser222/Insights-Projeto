@@ -136,7 +136,7 @@ b {
 
 @media screen and (max-width:900px) {
     body {
-        padding: 88px 24px;
+        padding: 88px 24px !important;
         border-radius: 8px;
     }
 
